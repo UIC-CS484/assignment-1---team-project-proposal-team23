@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <head>
-        <title>Example Page on Threat Modeling</title>
+        <title>Team 23 - SWAD Project Proposal</title>
 
         <script>
             /** JS Code **/
+            function myFunction() {
+              document.getElementById("demo").style.fontSize = "x-large";
+            }
+            function myFunction2() {
+              document.getElementById("demo").style.fontSize = "small";
+            }
         </script>
         
 
@@ -32,26 +38,28 @@
                 margin: 1%;
 
             }
+            h3{
+              text-align: center;
+            }
             footer{
                 display: flex;
                 background-color: gray;
                 width: 100%;
-                height: 200px;
                 clear: both;
+                word-wrap: break-word;
             }
             .footer_box{
                 flex: 1 0 200px;
                 background-color: white;
                 width: 150px;
                 margin: 1%;
-                height: 150px;
+                
             }
             
                         /* smaller than 1024 pixels */
             @media screen and (max-width: 1024px) {
                 header{
                     background-color: #cd0000;
-                    display: none;
                 }
                 
             }
@@ -70,15 +78,13 @@
         </style>
 
     </head>
-    <body>
+    <body id = "demo">
         <div id="container">
             <header> 
                 <h2>Studio 20 : Architecture Design & Interiors</h2>
             </header>
-
-            </header>
-            <section class="middleboxes">Project Particulars:
-                <article>
+            <section class="middleboxes">
+                <h3>Project Particulars</h3>
                     <ol>
                         <li>Restful APIs
                             <ol>
@@ -95,27 +101,26 @@
                         <li>Data collection from Authenticated Site users 
                           <ol>
                             <li>Feedback on project progress</li>
-                            <li>Schedule appointments</li>
+                            <li>Login and Signup functionality</li>
                           </ol>
                         </li>
                         <li>Database Details 
                           <ol>
                             <li>CONTACT_FORM -> name, email, phone, message</li>
                             <li>USER -> fname, lname, dob, email, password</li>
-                            <li>USER_CALENDER -> user_cal2user, calender items, progress</li>
-                            <li>USER_FEEDBACK -> user_fdback2user, feedback, appointment_req</li>
+                            <li>USER_FEEDBACK -> user_feedback2user, feedback, appointment_req</li>
                             
                           </ol>
                         </li>
                       </ol>
                       
-                </article>
+                
 
 
 
             </section>
-            <section class="middleboxes drop">Project Goals:
-                <article>
+            <section class="middleboxes drop">
+              <h3>Project Goals</h3>
                     <ol>
                         <li>Potential Users of the Site 
                             <ol>
@@ -137,11 +142,12 @@
                         </li>
                       </ol>
                       
-                </article>
+                
             </section>
             <footer>
-                <div class="footer_box">Resource Links
+                <div class="footer_box">
                     <section>
+                      <h3>Resource Links</h3>
                         <ol>
                             <li>Link to APIs
                                 <ol>
@@ -159,7 +165,7 @@
                             <li>Helpful Resources
                               <ol>
                                 <li>W3Schools</li>
-                                <li></li>
+                                <li>MDN</li>
                               </ol>
                             </li>
                           </ol>
@@ -167,18 +173,17 @@
                         </section>
 
                 </div>
-                <div class="footer_box">Concerns and Questions - 
+                <div class="footer_box"><h3>Concerns and Questions</h3>
                     <ol>
-                        <li>Can I get pictures for a slider from instagram?</li>
-                        <li>How to implement calender scheduling wrt database</li>
+                        <li>After login, user will be shown a page containing links to schedule pdf and feedback submission respectively, how to develop functionality for downloading schedule pdf and where will it be uploaded by the company ?</li>
                         <li>How to show countries on a map so user can manipulate data?</li>
                     </ol>
                 </div>
-                <div class="footer_box"></div>
+                <div class="footer_box">
+                  <button type="button" onclick="myFunction()">Set font size large</button>
+                  <button type="button" onclick="myFunction2()">Set font size small</button>
+                </div>
             </footer>
         </div><!--Closing container-->
-        <script>
-
-        </script>
     </body>
 </html>
