@@ -16,4 +16,4 @@ DEVELOPMENT TOOLS <br />
 IDE - Visual Studio Code <br /> 
 Technologies - HTML5, CSS3, Node.js (Server-side language), SQLite (Database), passport.js(Authentication) <br />
 
-Link to Hosted Github Page  - https://uic-cs484.github.io/assignment-1---team-project-proposal-team23/ <br />
+Link to Hosted Github Page  - https://uic-cs484.github.io/assignment-1---team-project-proposal-team23/proposal.html <br />
